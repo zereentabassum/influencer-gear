@@ -1,7 +1,6 @@
     /*-------------------
            styles 
      -------------------*/
-
 body{
     font-family: 'Roboto Slab', serif;
     background-color: rgb(253, 247, 239);
@@ -25,10 +24,6 @@ body{
 }
 .product-info p {
     margin-top: -10px;
-}
-.main-camera:hover img{
-    transform: scale(1.1);
-    transition: transform 0.4s;
 }
 /*-- button styles --*/
 button{
@@ -137,4 +132,40 @@ footer{
     color: rgba(216, 201, 201, 0.904);
     padding: 10px;
     margin-bottom: 5px;
+}
+/*------- Media Query -------*/
+
+          /* For Mobles */
+ @media only screen and (max-width: 688px)
+    {
+    .influencer{
+        width: 100%;
+        display: block;
+    }
+    .main-camera img {
+        width: 320px;
+        height: 300px;
+        margin-top: 40px;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .influencer-gear{
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+    /* For  Tablets */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    
+    .main-camera img{
+        height: 400px;
+        width: 420px;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
